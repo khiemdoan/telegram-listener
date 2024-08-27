@@ -1,0 +1,43 @@
+[project]
+name = "telegram-listener"
+version = "0.1.0"
+description = "Just a simple program to save all your messages in Telegram."
+authors = [
+    {name = "Khiem Doan", email = "doankhiem.crazy@gmail.com"},
+]
+
+readme = "README.md"
+license = {text = "MIT"}
+
+requires-python = ">=3.11"
+
+dependencies = [
+    "Telethon==1.36.0",
+    "loguru==0.7.2",
+    "fast-depends==2.4.10",
+    "pydantic==2.8.2",
+    "pydantic-settings==2.4.0",
+    "opensearch-py[async]==2.6.0",
+]
+
+[tool.pdm.dev-dependencies]
+testing = [
+    "pytest",
+    "pytest-asyncio",
+    "icecream",
+    "reloadium",
+]
+linting = [
+    "isort",
+    "ruff",
+]
+
+[tool.isort]
+line_length = 120
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
