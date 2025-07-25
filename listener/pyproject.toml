@@ -9,23 +9,24 @@ authors = [
 readme = "README.md"
 license = {text = "MIT"}
 
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 
 dependencies = [
-    "Telethon==1.36.0",
-    "loguru==0.7.2",
-    "fast-depends==2.4.10",
-    "pydantic==2.8.2",
-    "pydantic-settings==2.4.0",
-    "opensearch-py[async]==2.6.0",
+    "tzdata==2025.2",
+    "Telethon==1.40.0",
+    "loguru==0.7.3",
+    "fast-depends==2.4.12",
+    "pydantic==2.11.7",
+    "pydantic-settings==2.10.1",
+    "opensearch-py[async]==3.0.0",
 ]
 
-[tool.pdm.dev-dependencies]
+[dependency-groups]
+tools = [
+]
 testing = [
     "pytest",
     "pytest-asyncio",
-    "icecream",
-    "reloadium",
 ]
 linting = [
     "isort",
